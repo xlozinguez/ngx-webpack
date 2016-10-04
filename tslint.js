@@ -1,7 +1,10 @@
-{
+'use strict';
+let path = require('path');
+
+module.exports = {
   "extends": "tslint:recommended",
   "rulesDirectory": [
-    "node_modules/codelyzer"
+    path.join(process.cwd(), 'node_modules', 'codelyzer')
   ],
   "rules": {
     "member-access": false,

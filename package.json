@@ -9,6 +9,9 @@
   "dependencies": {
     "@angular/compiler": "2.0.1",
     "@angular/core": "2.0.1",
+    "@types/core-js": "0.9.34",
+    "@types/jasmine": "2.2.34",
+    "@types/node": "6.0.41",
     "angular2-template-loader": "0.5.0",
     "awesome-typescript-loader": "2.2.4",
     "codelyzer": "1.0.0-beta.0",

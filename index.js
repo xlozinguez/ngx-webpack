@@ -1,6 +1,7 @@
 'use strict';
-let webpackGenerator = require('./webpack');
-let karmaGenerator = require('./karma');
+
+let webpackGenerator = require('./config/webpack');
+let karmaGenerator = require('./config/karma');
 
 let npmLifecycleEvent = process.env.npm_lifecycle_event || '';
 let environment = process.env.NODE_ENV || '';

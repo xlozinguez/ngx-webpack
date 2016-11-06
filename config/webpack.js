@@ -1,4 +1,5 @@
 'use strict';
+
 let commonConfig = require('./webpack.common');
 let webpack = require('webpack');
 let merge = require('webpack-merge');
@@ -12,11 +13,17 @@ let commonPlugins = [
   new ExtractTextPlugin('style.bundle.css'),
   new ForkCheckerPlugin()
 ];
-let cssLoader = { test: /\.css$/, loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader' }) };
+let cssLoader = {
+  test: /\.css$/,
+  exclude: path.resolve(process.cwd(), 'src', 'app'),
+  loader: ExtractTextPlugin.extract({
+    fallbackLoader: 'style-loader',
+    loader: 'css-loader'
+  })
+};
 let entry = {
-  'main': './app/main.ts',
-  'vendor': './app/vendor.ts',
-  'style': './app/style.ts',
+  main: './app/main.ts',
+  vendor: './app/vendor.ts'
 };
 let output = {
   path: path.join(process.cwd(), 'dist'),
@@ -59,9 +66,7 @@ module.exports = function(options) {
         }),
         new CopyWebpackPlugin([
           { from: 'index.html' },
-          { from: 'favicon.ico' },
-          { from: 'api', to: 'api' },
-          { from: 'img', to: 'img' }
+          { from: 'favicon.ico' }
         ])
       ]),
 
@@ -109,6 +114,7 @@ module.exports = function(options) {
         port: 3000,
         inline: true,
         historyApiFallback: true,
+        stats: 'errors-only',
         watchOptions: {
           aggregateTimeout: 300,
           poll: 500

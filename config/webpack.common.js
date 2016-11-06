@@ -1,4 +1,5 @@
 'use strict';
+
 let webpack = require('webpack');
 let path = require('path');
 
@@ -35,9 +36,23 @@ module.exports = {
           path.join(process.cwd(), 'node_modules/@angular')
         ]
       },
-      { test: /\.html$/, loader: 'html?attrs=false&caseSensitive&removeAttributeQuotes=false' },
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file' }
+      {
+        test: /\.css$/,
+        include: path.resolve(process.cwd(), 'src', 'app'),
+        loaders: ['to-string-loader', 'css-loader']
+      },
+      {
+        test: /\.html$/,
+        loader: 'html?attrs=false&caseSensitive&removeAttributeQuotes=false'
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url?limit=10000&mimetype=application/font-woff'
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file'
+      }
     ]
   },
 

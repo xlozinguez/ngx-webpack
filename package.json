@@ -71,6 +71,6 @@
     "webpack",
     "karma",
     "jasmine"
-  ]
+  ],
   "license": "ISC"
 }

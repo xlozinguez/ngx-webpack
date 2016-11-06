@@ -55,6 +55,9 @@
     "rxjs": "5.0.0-beta.12",
     "zone.js": "0.6.26"
   },
+  "engines" : {
+    "node" : ">=5"
+  },
   "author": {
     "name": "blacksonic",
     "email": "soos.gabor86@gmail.com"

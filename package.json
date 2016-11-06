@@ -1,6 +1,6 @@
 {
   "name": "angular2-config-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An opinionated configuration generator for your Angular 2 environment. (Webpack 2, Karma and Jasmine)",
   "main": "index.js",
   "scripts": {

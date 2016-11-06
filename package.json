@@ -1,7 +1,7 @@
 {
   "name": "angular2-config-generator",
   "version": "1.0.0",
-  "description": "Angular 2 config generator with Webpack and Karma",
+  "description": "An opinionated configuration generator for your Angular 2 environment. (Webpack 2, Karma, Tslint)",
   "main": "index.js",
   "scripts": {
     "build": "webpack",

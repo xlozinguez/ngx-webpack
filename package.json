@@ -66,5 +66,11 @@
     "type": "git",
     "url": "https://github.com/blacksonic/angular2-config-generator.git"
   },
+  "keywords": [
+    "angular2",
+    "webpack",
+    "karma",
+    "jasmine"
+  ]
   "license": "ISC"
 }

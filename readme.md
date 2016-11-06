@@ -1,7 +1,7 @@
 # angular2-config-generator
 [![Build Status](https://travis-ci.org/blacksonic/angular2-config-generator.svg?branch=master)](https://travis-ci.org/blacksonic/angular2-config-generator)
-[![Dependency Status](https://david-dm.org/blacksonic/angular2-esnext-todomvc.svg)](https://david-dm.org/blacksonic/angular2-config-generator)
-[![devDependency Status](https://david-dm.org/blacksonic/angular2-esnext-todomvc/dev-status.svg)](https://david-dm.org/blacksonic/angular2-config-generator?type=dev)
+[![Dependency Status](https://david-dm.org/blacksonic/angular2-config-generator.svg)](https://david-dm.org/blacksonic/angular2-config-generator)
+[![devDependency Status](https://david-dm.org/blacksonic/angular2-config-generator/dev-status.svg)](https://david-dm.org/blacksonic/angular2-config-generator?type=dev)
 
 An opinionated configuration generator for your Angular 2 environment.
 Generates customizable Webpack 2, Karma and Tslint configurations.

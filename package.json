@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "deploy": "gh-pages -d dist",
+    "deploy": "node ./bin/github-release.js",
     "deploy-npm": "np --skip-cleanup",
     "lint": "tslint \"src/**/*.ts\"",
     "start": "webpack-dev-server",
     "start-prod": "http-server ./dist -p 3000",
     "test": "karma start"
+  },
+  "bin": {
+    "gh-deploy": "./bin/github-release.js"
   },
   "dependencies": {
     "@types/core-js": "~0.9.34",

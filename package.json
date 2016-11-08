@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "ngc": "ngc -p ./tsconfig.aot.json",
     "deploy": "node ./bin/github-release.js",
     "deploy-npm": "np --skip-cleanup",
     "lint": "tslint \"src/**/*.ts\"",

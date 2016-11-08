@@ -1,4 +1,6 @@
 node_modules
 .idea
 dist
-tmp
+ngfactory
+*.ngfactory.ts
+*.shim.ts

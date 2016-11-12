@@ -8,6 +8,7 @@ let fs = require('fs');
 let noJekyllFile = path.resolve(process.cwd(), 'dist', '.nojekyll');
 fs.closeSync(fs.openSync(noJekyllFile, 'w'));
 
+console.log('> gh-pages -d dist');
 ghPages.publish(path.resolve(process.cwd(), 'dist'),
   {
     dotfiles: true,
@@ -15,9 +16,8 @@ ghPages.publish(path.resolve(process.cwd(), 'dist'),
   },
   (e) => {
     if (e) {
-      console.log(`Error during deploy: ${e.message}`);
-    } else {
-      console.log('Published');
+      console.error(e);
+      process.exit(1);
     }
   }
 );

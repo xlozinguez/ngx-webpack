@@ -15,5 +15,4 @@ module.exports = function() {
     encoding: 'utf8',
     cwd: process.cwd()
   });
-  console.log('> ngc finished');
 };

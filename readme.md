@@ -34,8 +34,8 @@ Setup ```package.json``` scripts.
 
 ```
 "scripts": {
-  "start": "webpack-dev-server",
-  "test": "karma start"
+  "start": "ng-start",
+  "test": "ng-test"
 }
 ```
 
@@ -96,7 +96,7 @@ Tests can be run with the ```npm test``` command.
 It runs all files with ```*.spec.ts``` extension inside the ```src/app``` folder.
 The test setup is done in ```src/app/test.ts```.
 
-To run tests continuously add the following script: ```"scripts": { "test-watch": "karma start" }```.
+To run tests continuously add the following script: ```"scripts": { "test-watch": "ng-test --watch" }```.
 It will speed up rebuilds and run the tests automatically after every change.
 
 ### Linting
@@ -116,10 +116,22 @@ It's setup:
 
 ### Deployment
 
-After adding ```"scripts": { "build": "webpack" }``` and running it, 
+After adding ```"scripts": { "build": "ng-build" }``` and running it, 
 the generated files will appear in the ```dist``` folder. These are minified and ready for deployment.
 
-Github Pages deployment can be done with ```"scripts": { "deploy": "gh-pages -d dist" }```.
+Github Pages deployment can be done with ```"scripts": { "deploy": "ng-deploy" }```.
+
+### AOT support
+
+It can be enabled with the ```--aot``` flag for both starting and building the application.
+```
+"scripts": { 
+  "start": "ng-start --aot" 
+  "deploy": "ng-deploy --aot" 
+}
+```
+
+Instead of the original endpoint ```src/app/main.ts``` it starts from ```src/app/main.aot.ts```.
 
 ### Example projects
 

@@ -4,12 +4,11 @@
 process.env.NODE_ENV = 'test';
 let path = require('path');
 let Server = require('karma').Server;
-
-let karmaConfigPath = path.resolve(process.cwd(), 'karma.conf.js');
+let ResolveFile = require('../lib/bin/resolve-file');
 
 console.log('> karma start');
 let server = new Server(
-  { configFile: karmaConfigPath }, (errorCode) => {
+  { configFile: ResolveFile.getKarmaConfigPath() }, (errorCode) => {
     if (errorCode) {
       console.log(`> karma error code: ${errorCode}`);
       process.exit(errorCode);

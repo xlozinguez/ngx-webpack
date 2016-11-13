@@ -2,10 +2,10 @@
 'use strict';
 
 process.env.NODE_ENV = 'production';
-let path = require('path');
 let webpack = require('webpack');
 let ngcRun = require('./lib/ngc');
 let Config = require('../lib/config');
+let ResolveFile = require('../lib/bin/resolve-file');
 
 let config = new Config().calculate();
 
@@ -14,8 +14,7 @@ if (config.aot) {
 }
 
 console.log('> webpack');
-let webpackConfigPath = path.resolve(process.cwd(), 'webpack.config.js');
-let webpackConfig = require(webpackConfigPath);
+let webpackConfig = ResolveFile.getWebpackConfig();
 let compiler = webpack(webpackConfig);
 
 compiler.run((e) => {

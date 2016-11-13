@@ -1,5 +1,8 @@
 'use strict';
 
-module.exports = require('./').karma(
-  require('./webpack.config')
-);
+let ResolveFile = require('./lib/bin/resolve-file');
+let karmaConfig = require('./').karma(ResolveFile.getWebpackConfig());
+
+module.exports = (config) => {
+  config.set(karmaConfig);
+};

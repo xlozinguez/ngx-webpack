@@ -8,6 +8,7 @@ let WebpackDevServer = require('webpack-dev-server');
 let webpack = require('webpack');
 let ngcRun = require('./lib/ngc');
 let Config = require('../lib/config');
+let ResolveFile = require('../lib/bin/resolve-file');
 
 let config = new Config().calculate();
 
@@ -23,8 +24,7 @@ if (config.aot) {
   ).on('all', () => ngcRun());
 }
 
-let webpackConfigPath = path.resolve(process.cwd(), 'webpack.config.js');
-let webpackConfig = require(webpackConfigPath);
+let webpackConfig = ResolveFile.getWebpackConfig();
 let compiler = webpack(webpackConfig);
 
 console.log('> webpack-dev-server');

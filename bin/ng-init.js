@@ -6,8 +6,8 @@ let fsExtra = require('fs-extra');
 
 let examplePath = path.resolve(__dirname, '..', 'example');
 let exampleAppPath = path.resolve(__dirname, '..', 'src');
-let destinationPath = path.resolve(process.cwd(), 'generated');
-let destinationAppPath = path.resolve(process.cwd(), 'generated', 'src');
+let destinationPath = process.cwd();
+let destinationAppPath = path.resolve(destinationPath, 'src');
 
 fsExtra.copySync(exampleAppPath, destinationAppPath);
 fsExtra.copySync(examplePath, destinationPath);

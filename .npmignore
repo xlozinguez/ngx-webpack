@@ -1,5 +1,3 @@
 src
 dist
-webpack.config.js
-karma.conf.js
 tslint.json

@@ -42,7 +42,6 @@ module.exports = {
     "curly": false,
     "forin": true,
     "label-position": true,
-    "label-undefined": true,
     "no-arg": true,
     "no-bitwise": true,
     "no-conditional-assignment": true,
@@ -56,7 +55,6 @@ module.exports = {
     ],
     "no-construct": true,
     "no-debugger": true,
-    "no-duplicate-key": true,
     "no-duplicate-variable": true,
     "no-empty": false,
     "no-eval": true,
@@ -64,9 +62,7 @@ module.exports = {
     "no-shadowed-variable": true,
     "no-string-literal": false,
     "no-switch-case-fall-through": true,
-    "no-unreachable": true,
     "no-unused-expression": true,
-    "no-unused-variable": false,
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "radix": true,
@@ -74,10 +70,6 @@ module.exports = {
     "triple-equals": [
       true,
       "allow-null-check"
-    ],
-    "use-strict": [
-      true,
-      "check-module"
     ],
 
     "eofline": true,
@@ -109,7 +101,7 @@ module.exports = {
     "interface-name": false,
     "jsdoc-format": true,
     "no-consecutive-blank-lines": false,
-    "no-constructor-vars": false,
+    "no-parameter-properties": false,
     "one-line": [
       true,
       "check-open-brace",
@@ -138,6 +130,7 @@ module.exports = {
       "check-separator",
       "check-type"
     ],
-    "import-destructuring-spacing": true
+    "import-destructuring-spacing": true,
+    "ordered-imports": false
   }
 };

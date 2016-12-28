@@ -15,12 +15,16 @@
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./ngfactory",
+    "outDir": "./build",
     "rootDir": "./src/app",
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
-      "core-js",
-      "node"
+      "node",
+      "jasmine"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
     ]
   },
   "angularCompilerOptions": {
@@ -32,6 +36,11 @@
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "**/*.ngfactory.ts",
+    "**/*.shim.ts",
+    "**/*.spec.ts",
+    "src/app/main*.ts",
+    "src/app/polyfill.ts"
   ]
 }

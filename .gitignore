@@ -3,4 +3,5 @@ node_modules
 dist
 build
 *.ngfactory.ts
-*.shim.ts
+*.ngstyle.ts
+*.ngsummary.json

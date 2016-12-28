@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": "",
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
+    "declaration": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "mapRoot": "",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "outDir": "./build",
-    "rootDir": "./src/app",
     "skipLibCheck": true,
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
@@ -24,10 +27,13 @@
     "node_modules",
     "dist",
     "**/*.ngfactory.ts",
-    "**/*.shim.ts",
+    "**/*.ngstyle.ts",
     "**/*.spec.ts",
     "src/app/main*.ts",
-    "src/app/polyfill.ts"
+    "src/app/polyfill.ts",
+    "src/app/style.ts",
+    "src/app/test.ts",
+    "src/app/vendor.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,

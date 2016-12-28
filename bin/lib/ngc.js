@@ -6,7 +6,7 @@ let binPath = childProcess.execSync('npm bin', {
   encoding: 'utf8',
   cwd: process.cwd()
 });
-let ngcCommand = 'ngc -p ./tsconfig.aot.json';
+let ngcCommand = 'ngc';
 let fullCommand = binPath.trim() + '/' + ngcCommand;
 
 module.exports = function() {

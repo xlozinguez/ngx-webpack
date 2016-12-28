@@ -1,6 +1,7 @@
 .idea
 node_modules
 dist
-ngfactory
+build
 *.ngfactory.ts
-*.shim.ts
+*.ngstyle.ts
+*.ngsummary.json

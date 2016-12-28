@@ -10,6 +10,8 @@
     "mapRoot": "",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "outDir": "./build",
+    "rootDir": "./src/app",
     "skipLibCheck": true,
     "typeRoots": [ "./node_modules/@types" ],
     "types": [

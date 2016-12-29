@@ -1,4 +1,5 @@
 import './style';
+import './polyfill';
 
 import '@angular/common';
 // import '@angular/compiler';

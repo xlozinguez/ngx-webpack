@@ -1,2 +1,1 @@
-require('bootstrap/dist/css/bootstrap.css');
-require('../css/style.css');
+import '../css/style.css';

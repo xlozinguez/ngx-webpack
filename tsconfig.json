@@ -31,11 +31,7 @@
     "**/*.ngfactory.ts",
     "**/*.ngstyle.ts",
     "**/*.spec.ts",
-    "src/app/main*.ts",
-    "src/app/polyfill.ts",
-    "src/app/style.ts",
-    "src/app/test.ts",
-    "src/app/vendor.ts"
+    "src/app/*.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,

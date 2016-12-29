@@ -9,7 +9,7 @@ Generates customizable Webpack 2, Karma and Tslint configurations.
 ### Installation
 
 ```
-npm install angular2-bundle angular2-config-generator --save-dev
+npm install angular2-config-generator --save-dev
 ```
 
 ### Usage

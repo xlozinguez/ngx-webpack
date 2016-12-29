@@ -7,6 +7,7 @@
     "ng-start": "node ./bin/ng-start.js --aot",
     "ng-build": "node ./bin/ng-build.js --aot",
     "ng-deploy": "node ./bin/ng-deploy.js",
+    "ng-lint": "node ./bin/ng-lint.js",
     "ng-test": "node ./bin/ng-test.js",
     "ng-test-watch": "node ./bin/ng-test.js --watch",
     "ng-init": "node ./bin/ng-init.js",
@@ -24,11 +25,10 @@
     "ng-build": "./bin/ng-build.js",
     "ng-deploy": "./bin/ng-deploy.js",
     "ng-test": "./bin/ng-test.js",
-    "ng-init": "./bin/ng-init.js"
+    "ng-init": "./bin/ng-init.js",
+    "ng-lint": "./bin/ng-lint.js"
   },
   "dependencies": {
-    "@angular/compiler-cli": "2.4.1",
-    "@angular/platform-server": "2.4.1",
     "@ngtools/webpack": "1.2.1",
     "@types/jasmine": "~2.5.38",
     "@types/node": "~6.0.54",
@@ -63,13 +63,14 @@
   "devDependencies": {
     "@angular/common": "2.4.1",
     "@angular/compiler": "2.4.1",
+    "@angular/compiler-cli": "2.4.1",
     "@angular/core": "2.4.1",
     "@angular/forms": "2.4.1",
     "@angular/http": "2.4.1",
     "@angular/platform-browser": "2.4.1",
     "@angular/platform-browser-dynamic": "2.4.1",
+    "@angular/platform-server": "2.4.1",
     "@angular/router": "3.4.1",
-    "@ngtools/webpack": "1.2.1",
     "bootstrap": "3.3.7",
     "core-js": "2.4.1",
     "http-server": "0.9.0",

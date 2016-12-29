@@ -8,7 +8,7 @@
     "build": "ng-build --aot",
     "test": "ng-test",
     "test-watch": "ng-test --watch",
-    "lint": "tslint \"src/**/*.ts\"",
+    "lint": "ng-lint",
     "deploy": "ng-deploy"
   },
   "keywords": [

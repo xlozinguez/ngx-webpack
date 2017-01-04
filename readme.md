@@ -1,7 +1,7 @@
-# angular2-config-generator
-[![Build Status](https://travis-ci.org/blacksonic/angular2-config-generator.svg?branch=master)](https://travis-ci.org/blacksonic/angular2-config-generator)
-[![Dependency Status](https://david-dm.org/blacksonic/angular2-config-generator.svg)](https://david-dm.org/blacksonic/angular2-config-generator)
-[![devDependency Status](https://david-dm.org/blacksonic/angular2-config-generator/dev-status.svg)](https://david-dm.org/blacksonic/angular2-config-generator?type=dev)
+# ngx-webpack
+[![Build Status](https://travis-ci.org/blacksonic/ngx-webpack.svg?branch=master)](https://travis-ci.org/blacksonic/ngx-webpack)
+[![Dependency Status](https://david-dm.org/blacksonic/ngx-webpack.svg)](https://david-dm.org/blacksonic/ngx-webpack)
+[![devDependency Status](https://david-dm.org/blacksonic/ngx-webpack/dev-status.svg)](https://david-dm.org/blacksonic/ngx-webpack?type=dev)
 
 An opinionated configuration generator for your Angular 2 environment.
 Generates customizable Webpack 2, Karma and Tslint configurations.
@@ -9,7 +9,7 @@ Generates customizable Webpack 2, Karma and Tslint configurations.
 ### Installation
 
 ```
-npm install angular2-config-generator --save-dev // adds build configuration
+npm install ngx-webpack --save-dev // adds build configuration
 $(npm bin)/ng-init // scaffolds basic application
 npm install // install Angular dependencies
 ```
@@ -20,14 +20,14 @@ Create ```webpack.config.js```.
 
 ```
 'use strict';
-module.exports = require('angular2-config-generator').webpack();
+module.exports = require('ngx-webpack').webpack();
 ```
 
 Create ```karma.conf.js```.
 
 ```
 'use strict';
-module.exports = require('angular2-config-generator').karma(
+module.exports = require('ngx-webpack').karma(
   require('./webpack.config')
 );
 ```
@@ -112,7 +112,7 @@ It's setup:
 
 ```
 {
-  "extends": "angular2-config-generator"
+  "extends": "ngx-webpack/tslint.js"
 }
 ```
 

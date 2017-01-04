@@ -1,6 +1,6 @@
 {
   "name": "ngx-webpack",
-  "version": "2.3.2",
+  "version": "3.0.0",
   "description": "An opinionated configuration generator for your Angular 2 environment. (Webpack 2, Karma and Jasmine)",
   "main": "index.js",
   "scripts": {
